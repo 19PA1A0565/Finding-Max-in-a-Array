@@ -1,8 +1,8 @@
-import java.util.Scanner;
+import java.util.*;
 class Main{
     public static int GetMax(int nums[]){
-        int maxValue = nums[0];
-        for(int j = 0; j<nums.length;j++){
+        int maxValue = Integer.MIN_VALUE;
+        for(int j = 0; j < nums.length; j++){
             if(maxValue < nums[j]){
                 maxValue = nums[j];
             }
@@ -17,6 +17,6 @@ class Main{
             arr[i] = obj.nextInt();
         }
         int max = GetMax(arr);
-        System.out.println("Maximum value in the array :"+ max);
+        System.out.println("Maximum value in the array :" + max);
     }
 }
